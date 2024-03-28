@@ -19,5 +19,17 @@ Route::get('/', function () {
 
 Route::get('/', function () {
     return view('testing');
-    });
+});
+
+Route::get('/pegawai', function () {
+    return view('pegawai');
+});
+
+Route::get('/jabatan', function () {
+    return view('jabatan');
+});
+
+Route::get('/pendidikan', function () {
+    return view('pendidikan');
+});
     
