@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\JabatanController;
+use App\Http\Controllers\PendidikanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,19 +21,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/pegawai', function () {
-    return view('pegawai');
-})->name('pegawai');
+Route::get('/pegawai', [PegawaiController::class, 'index'])->name('pegawai');
 
-Route::get('/jabatan', function () {
-    return view('jabatan');
-})->name('jabatan');
+Route::get('/jabatan', [JabatanController::class, 'index'])->name('jabatan');
 
-Route::get('/pendidikan', function () {
-    return view('pendidikan');
-})->name('pendidikan');
-    
+Route::get('/pendidikan', [PendidikanController::class, 'index'])->name('pendidikan');

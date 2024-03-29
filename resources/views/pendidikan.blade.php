@@ -50,10 +50,10 @@
                 <div class="card-header pb-0 p-3">
                     <div class="row">
                         <div class="col-6 d-flex align-items-center">
-                            <h6 class="mb-0">Invoices</h6>
+                            <h6 class="mb-0">Data Pendidikan</h6>
                         </div>
                         <div class="col-6 text-end">
-                            <button class="btn btn-outline-primary btn-sm mb-0">View All</button>
+                            <button class="btn btn-outline-primary btn-sm mb-0">Lihat Detail</button>
                         </div>
                     </div>
                 </div>
@@ -62,51 +62,61 @@
                     <ul class="list-group">
                         <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-4 border-radius-lg">
                             <div class="d-flex flex-column">
-                            <h6 class="mb-1 text-dark font-weight-bold text-sm">March, 01, 2020</h6>
+                            <h6 class="mb-1 text-dark font-weight-bold text-sm">Alina Joanne</h6>
                             <span class="text-xs">#MS-415646</span>
                             </div>
                             <div class="d-flex align-items-center text-sm">
-                            $180
+                            Finance Manager
                             <button class="btn btn-link text-dark text-sm mb-0 px-0 ms-4"><i class="fas fa-file-pdf text-lg me-1"></i> PDF</button>
                             </div>
                         </li>
                         <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-4 border-radius-lg">
                             <div class="d-flex flex-column">
-                            <h6 class="text-dark mb-1 font-weight-bold text-sm">February, 10, 2021</h6>
+                            <h6 class="text-dark mb-1 font-weight-bold text-sm">Cornand Marchell</h6>
                             <span class="text-xs">#RV-126749</span>
                             </div>
                             <div class="d-flex align-items-center text-sm">
-                            $250
+                            Programator Developer
                             <button class="btn btn-link text-dark text-sm mb-0 px-0 ms-4"><i class="fas fa-file-pdf text-lg me-1"></i> PDF</button>
                             </div>
                         </li>
                         <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-4 border-radius-lg">
                             <div class="d-flex flex-column">
-                            <h6 class="text-dark mb-1 font-weight-bold text-sm">April, 05, 2020</h6>
+                            <h6 class="text-dark mb-1 font-weight-bold text-sm">Laura Anastasya</h6>
                             <span class="text-xs">#FB-212562</span>
                             </div>
                             <div class="d-flex align-items-center text-sm">
-                            $560
+                            Human Relationship Manager
                             <button class="btn btn-link text-dark text-sm mb-0 px-0 ms-4"><i class="fas fa-file-pdf text-lg me-1"></i> PDF</button>
                             </div>
                         </li>
                         <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-4 border-radius-lg">
                             <div class="d-flex flex-column">
-                            <h6 class="text-dark mb-1 font-weight-bold text-sm">June, 25, 2019</h6>
+                            <h6 class="text-dark mb-1 font-weight-bold text-sm">Bryan Anderson</h6>
                             <span class="text-xs">#QW-103578</span>
                             </div>
                             <div class="d-flex align-items-center text-sm">
-                            $120
+                            Programator Developer
                             <button class="btn btn-link text-dark text-sm mb-0 px-0 ms-4"><i class="fas fa-file-pdf text-lg me-1"></i> PDF</button>
                             </div>
                         </li>
-                        <li class="list-group-item border-0 d-flex justify-content-between ps-0 border-radius-lg">
+                        <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-4 border-radius-lg">
                             <div class="d-flex flex-column">
                             <h6 class="text-dark mb-1 font-weight-bold text-sm">March, 01, 2019</h6>
                             <span class="text-xs">#AR-803481</span>
                             </div>
                             <div class="d-flex align-items-center text-sm">
-                            $300
+                            Data Analyst
+                            <button class="btn btn-link text-dark text-sm mb-0 px-0 ms-4"><i class="fas fa-file-pdf text-lg me-1"></i> PDF</button>
+                            </div>
+                        </li>
+                        <li class="list-group-item border-0 d-flex justify-content-between ps-0 border-radius-lg">
+                            <div class="d-flex flex-column">
+                            <h6 class="text-dark mb-1 font-weight-bold text-sm">Emmund Hidelton</h6>
+                            <span class="text-xs">#PX-723495</span>
+                            </div>
+                            <div class="d-flex align-items-center text-sm">
+                            Back-End Developer
                             <button class="btn btn-link text-dark text-sm mb-0 px-0 ms-4"><i class="fas fa-file-pdf text-lg me-1"></i> PDF</button>
                             </div>
                         </li>
@@ -166,6 +176,11 @@ Heriot - Watt University Dubai</span></span>
         </div>
         </div>
     </div>
+    </div>
+    <div class="col-md-12">
+        <div class="text-end mt-4">
+            <a href="#" class="btn btn-primary btn-sm">Lihat Selengkapnya</a>
+        </div>
     </div>
 </div>
 @endsection
