@@ -2,20 +2,60 @@
 @section('content')
 <div class="container-fluid py-4">
     <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title">Form Master Jabatan</h5>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="jabatan" class="form-label">Nama Jabatan</label>
+                            <input type="text" class="form-control" id="jabatan" placeholder="Masukkan nama jabatan">
+                        </div>
+                        <div class="mb-3">
+                            <label for="level" class="form-label">Level</label>
+                            <select class="form-select" id="level">
+                                <option selected disabled>Pilih level jabatan</option>
+                                <option value="1">Staff</option>
+                                <option value="2">Supervisor</option>
+                                <option value="3">Manager</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="divisi" class="form-label">Divisi</label>
+                            <input type="text" class="form-control" id="divisi" placeholder="Masukkan nama divisi">
+                        </div>
+                        <div class="mb-3">
+                            <label for="gaji" class="form-label">Gaji</label>
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1">Rp</span>
+                                <input type="text" class="form-control" id="gaji" placeholder="Masukkan jumlah gaji">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary float-end">Simpan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row mt-4">
     <div class="col-12">
         <div class="card mb-4">
         <div class="card-header pb-0">
-            <h6>Authors table</h6>
+            <h6>Tabel Jabatan</h6>
         </div>
         <div class="card-body px-0 pt-0 pb-2">
             <div class="table-responsive p-0">
             <table class="table align-items-center mb-0">
                 <thead>
                 <tr>
-                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Author</th>
-                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Function</th>
-                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status</th>
-                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Employed</th>
+                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama</th>
+                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Jabatan</th>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Level</th>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Divisi</th>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Gaji</th>
                     <th class="text-secondary opacity-7"></th>
                 </tr>
                 </thead>
@@ -27,20 +67,23 @@
                         <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3" alt="user1">
                         </div>
                         <div class="d-flex flex-column justify-content-center">
-                        <h6 class="mb-0 text-sm">John Michael</h6>
-                        <p class="text-xs text-secondary mb-0">john@creative-tim.com</p>
+                        <h6 class="mb-0 text-sm">Alina Joanne</h6>
+                        <p class="text-xs text-secondary mb-0">alinjoan@creative-tim.com</p>
                         </div>
                     </div>
                     </td>
                     <td>
-                    <p class="text-xs font-weight-bold mb-0">Manager</p>
-                    <p class="text-xs text-secondary mb-0">Organization</p>
+                    <p class="text-xs font-weight-bold mb-0">Finance</p>
+                    <p class="text-xs text-secondary mb-0">Manager</p>
                     </td>
                     <td class="align-middle text-center text-sm">
-                    <span class="badge badge-sm bg-gradient-success">Online</span>
+                    <span class="badge badge-sm bg-gradient-success">Manajer</span>
                     </td>
                     <td class="align-middle text-center">
-                    <span class="text-secondary text-xs font-weight-bold">23/04/18</span>
+                    <span class="text-secondary text-xs font-weight-bold">Finance</span>
+                    </td>
+                    <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">Rp. 12.000.000</span>
                     </td>
                     <td class="align-middle">
                     <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
@@ -55,8 +98,8 @@
                         <img src="../assets/img/team-3.jpg" class="avatar avatar-sm me-3" alt="user2">
                         </div>
                         <div class="d-flex flex-column justify-content-center">
-                        <h6 class="mb-0 text-sm">Alexa Liras</h6>
-                        <p class="text-xs text-secondary mb-0">alexa@creative-tim.com</p>
+                        <h6 class="mb-0 text-sm">Cornand Marchell</h6>
+                        <p class="text-xs text-secondary mb-0">cornmarchell@creative-tim.com</p>
                         </div>
                     </div>
                     </td>
@@ -65,10 +108,13 @@
                     <p class="text-xs text-secondary mb-0">Developer</p>
                     </td>
                     <td class="align-middle text-center text-sm">
-                    <span class="badge badge-sm bg-gradient-secondary">Offline</span>
+                    <span class="badge badge-sm bg-gradient-secondary">Staff</span>
                     </td>
                     <td class="align-middle text-center">
-                    <span class="text-secondary text-xs font-weight-bold">11/01/19</span>
+                    <span class="text-secondary text-xs font-weight-bold">IT</span>
+                    </td>
+                    <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">Rp. 10.000.000</span>
                     </td>
                     <td class="align-middle">
                     <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
@@ -83,20 +129,23 @@
                         <img src="../assets/img/team-4.jpg" class="avatar avatar-sm me-3" alt="user3">
                         </div>
                         <div class="d-flex flex-column justify-content-center">
-                        <h6 class="mb-0 text-sm">Laurent Perrier</h6>
-                        <p class="text-xs text-secondary mb-0">laurent@creative-tim.com</p>
+                        <h6 class="mb-0 text-sm">Laura Anastasya</h6>
+                        <p class="text-xs text-secondary mb-0">lauratasya@creative-tim.com</p>
                         </div>
                     </div>
                     </td>
                     <td>
-                    <p class="text-xs font-weight-bold mb-0">Executive</p>
-                    <p class="text-xs text-secondary mb-0">Projects</p>
+                    <p class="text-xs font-weight-bold mb-0">Human Relationship</p>
+                    <p class="text-xs text-secondary mb-0">Manager</p>
                     </td>
                     <td class="align-middle text-center text-sm">
-                    <span class="badge badge-sm bg-gradient-success">Online</span>
+                    <span class="badge badge-sm bg-gradient-success">Manager</span>
                     </td>
                     <td class="align-middle text-center">
-                    <span class="text-secondary text-xs font-weight-bold">19/09/17</span>
+                    <span class="text-secondary text-xs font-weight-bold">HRD</span>
+                    </td>
+                    <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">Rp. 18.000.000</span>
                     </td>
                     <td class="align-middle">
                     <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
@@ -111,8 +160,8 @@
                         <img src="../assets/img/team-3.jpg" class="avatar avatar-sm me-3" alt="user4">
                         </div>
                         <div class="d-flex flex-column justify-content-center">
-                        <h6 class="mb-0 text-sm">Michael Levi</h6>
-                        <p class="text-xs text-secondary mb-0">michael@creative-tim.com</p>
+                        <h6 class="mb-0 text-sm">Bryan Anderson</h6>
+                        <p class="text-xs text-secondary mb-0">bryananderson@creative-tim.com</p>
                         </div>
                     </div>
                     </td>
@@ -121,10 +170,13 @@
                     <p class="text-xs text-secondary mb-0">Developer</p>
                     </td>
                     <td class="align-middle text-center text-sm">
-                    <span class="badge badge-sm bg-gradient-success">Online</span>
+                    <span class="badge badge-sm bg-gradient-success">Manager</span>
                     </td>
                     <td class="align-middle text-center">
-                    <span class="text-secondary text-xs font-weight-bold">24/12/08</span>
+                    <span class="text-secondary text-xs font-weight-bold">IT</span>
+                    </td>
+                    <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">Rp. 22.000.000</span>
                     </td>
                     <td class="align-middle">
                     <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
@@ -139,20 +191,23 @@
                         <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3" alt="user5">
                         </div>
                         <div class="d-flex flex-column justify-content-center">
-                        <h6 class="mb-0 text-sm">Richard Gran</h6>
-                        <p class="text-xs text-secondary mb-0">richard@creative-tim.com</p>
+                        <h6 class="mb-0 text-sm">Reynald Walter</h6>
+                        <p class="text-xs text-secondary mb-0">reywalter@creative-tim.com</p>
                         </div>
                     </div>
                     </td>
                     <td>
-                    <p class="text-xs font-weight-bold mb-0">Manager</p>
-                    <p class="text-xs text-secondary mb-0">Executive</p>
+                    <p class="text-xs font-weight-bold mb-0">Data</p>
+                    <p class="text-xs text-secondary mb-0">Analyst</p>
                     </td>
                     <td class="align-middle text-center text-sm">
-                    <span class="badge badge-sm bg-gradient-secondary">Offline</span>
+                    <span class="badge badge-sm bg-gradient-secondary">Staff</span>
                     </td>
                     <td class="align-middle text-center">
-                    <span class="text-secondary text-xs font-weight-bold">04/10/21</span>
+                    <span class="text-secondary text-xs font-weight-bold">Operasional</span>
+                    </td>
+                    <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">Rp. 8.000.000</span>
                     </td>
                     <td class="align-middle">
                     <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
@@ -167,20 +222,23 @@
                         <img src="../assets/img/team-4.jpg" class="avatar avatar-sm me-3" alt="user6">
                         </div>
                         <div class="d-flex flex-column justify-content-center">
-                        <h6 class="mb-0 text-sm">Miriam Eric</h6>
-                        <p class="text-xs text-secondary mb-0">miriam@creative-tim.com</p>
+                        <h6 class="mb-0 text-sm">Emmund Hidelton</h6>
+                        <p class="text-xs text-secondary mb-0">emmundhidel@creative-tim.com</p>
                         </div>
                     </div>
                     </td>
                     <td>
-                    <p class="text-xs font-weight-bold mb-0">Programtor</p>
+                    <p class="text-xs font-weight-bold mb-0">Back-End</p>
                     <p class="text-xs text-secondary mb-0">Developer</p>
                     </td>
                     <td class="align-middle text-center text-sm">
-                    <span class="badge badge-sm bg-gradient-secondary">Offline</span>
+                    <span class="badge badge-sm bg-gradient-secondary">Staff</span>
                     </td>
                     <td class="align-middle text-center">
-                    <span class="text-secondary text-xs font-weight-bold">14/09/20</span>
+                    <span class="text-secondary text-xs font-weight-bold">IT</span>
+                    </td>
+                    <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">Rp. 9.500.000</span>
                     </td>
                     <td class="align-middle">
                     <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
@@ -199,7 +257,7 @@
     <div class="col-12">
         <div class="card mb-4">
         <div class="card-header pb-0">
-            <h6>Projects table</h6>
+            <h6>Statistik Jabatan</h6>
         </div>
         <div class="card-body px-0 pt-0 pb-2">
             <div class="table-responsive p-0">
