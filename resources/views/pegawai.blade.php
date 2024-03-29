@@ -66,20 +66,20 @@
             </div>
             <div class="col-md-6">
                 <div class="form-group">
+                <label for="example-text-input" class="form-control-label">ID Pegawai</label>
+                <input class="form-control" type="email" value="6246281937">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
                 <label for="example-text-input" class="form-control-label">Alamat Email</label>
-                <input class="form-control" type="email" value="luthfiyyahzahwa@gmail.com">
+                <input class="form-control" type="text" value="luthfiyyahzahwa@gmail.com">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
-                <label for="example-text-input" class="form-control-label">First name</label>
-                <input class="form-control" type="text" value="Luthfiyyah">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                <label for="example-text-input" class="form-control-label">Last name</label>
-                <input class="form-control" type="text" value="Zahwa">
+                <label for="example-text-input" class="form-control-label">No Handphone</label>
+                <input class="form-control" type="text" value="089726213129">
                 </div>
             </div>
             </div>
