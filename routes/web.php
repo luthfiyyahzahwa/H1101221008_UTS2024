@@ -18,18 +18,18 @@ Route::get('/', function () {
 });
 
 Route::get('/', function () {
-    return view('testing');
-});
+    return view('home');
+})->name('home');
 
 Route::get('/pegawai', function () {
     return view('pegawai');
-});
+})->name('pegawai');
 
 Route::get('/jabatan', function () {
     return view('jabatan');
-});
+})->name('jabatan');
 
 Route::get('/pendidikan', function () {
     return view('pendidikan');
-});
+})->name('pendidikan');
     
